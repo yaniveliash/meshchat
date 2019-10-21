@@ -1,5 +1,5 @@
 # MeshChat [AREDN Project]
-A dockerized version of Meshchat for fast and easy deployment
+A dockerized version of Meshchat for fast and easy deployment<br>
 https://www.trevorsbench.com/meshchat-messaging-for-mesh-networks/
 
 # Pre-Requeiset
