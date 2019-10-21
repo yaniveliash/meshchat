@@ -1,0 +1,11 @@
+#!/bin/sh
+set -e -x
+
+sed -i "s/our \$pi_zone.*/our \$pi_zone                    = \'${MESH_ID}\';/" /usr/lib/cgi-bin/meshchatconfig.pm
+
+sed -i "s/our \$local_meshchat_node.*/our \$local_meshchat_node        = \'${NODE_ID}';/" /usr/lib/cgi-bin/meshchatconfig.pm
+
+apachectl -DFOREGROUND "$@"
+
+our $pi_zone                    = 'MeshChat';
+our $local_meshchat_node        = 'localnode';
