@@ -8,7 +8,7 @@ https://www.trevorsbench.com/meshchat-messaging-for-mesh-networks/
 - `meshchat-api` installed on your local AREDN node
 
 # Run
-docker run -d -p 8080:80 -e MESH_ID="MeshChat" -e NODE_ID="$LOCAL_NODE" geostant/meshchat:1.02
+`docker run -d -p 8080:80 -e MESH_ID="MeshChat" -e NODE_ID="$LOCAL_NODE" geostant/meshchat:1.02`
 
 > Please note that $LOCAL_NODE should be replaced with the actual node that is connected to your machine, for example: docker run -d -p 8080:80 -e MESH_ID="MeshChat" -e NODE_ID="4x5dl-gateway" geostant/meshchat:1.02
 
